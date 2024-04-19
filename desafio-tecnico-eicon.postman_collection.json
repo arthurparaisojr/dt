@@ -13,10 +13,38 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"controlNumber\": \"001\",\r\n  \"registrationDate\": \"2024-04-19T12:00:00Z\",\r\n  \"productName\": \"Gestão tributária e fiscal\",\r\n  \"unitPrice\": 299.99,\r\n  \"quantity\": 3,\r\n  \"clientId\": 1\r\n}\r\n",
+					"raw": "{\r\n  \"controlNumber\": 6,\r\n  \"registrationDate\": \"2024-04-19T12:00:00Z\",\r\n  \"productName\": \"Gestão tributária e fiscal\",\r\n  \"unitPrice\": 299.99,\r\n  \"quantity\": 3,\r\n  \"clientId\": 1\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enviar pedidos XML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<Order>\r\n    <controlNumber>7</controlNumber>\r\n    <registrationDate>2024-04-19T12:00:00Z</registrationDate>\r\n    <productName>Gestão tributária e fiscal</productName>\r\n    <unitPrice>299.99</unitPrice>\r\n    <quantity>3</quantity>\r\n    <clientId>1</clientId>\r\n</Order>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
 						}
 					}
 				},

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.http.MediaType;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -18,7 +18,8 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @PostMapping
+    @PostMapping(consumes = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE },
+            produces = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
     public ResponseEntity<Order> createOrder(@RequestBody Order order) {
         if (orderService.findByControlNumber(order.getControlNumber()).isPresent()) {
             return ResponseEntity.badRequest().build();
@@ -27,13 +28,13 @@ public class OrderController {
         return ResponseEntity.ok(savedOrder);
     }
 
-    @GetMapping
+    @GetMapping(produces = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
     public ResponseEntity<List<Order>> getOrders() {
         List<Order> orders = orderService.findAll();
         return ResponseEntity.ok(orders);
     }
 
-    @GetMapping("/filtro")
+    @GetMapping(value = "/filtro", produces = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
     public List<Order> getOrders(
             @RequestParam(required = false) Long orderId,
             @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) Date registrationDate,
