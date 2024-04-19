@@ -32,9 +32,8 @@ public class Order {
 
     public Order() {}
 
-    // Business logic for discounts and total price calculation
     @PrePersist
-    private void calculateTotalPrice() {
+    public void calculateTotalPrice() {
         if (quantity > 5) {
             unitPrice = unitPrice.subtract(unitPrice.multiply(BigDecimal.valueOf(0.05)));
         }
@@ -44,5 +43,69 @@ public class Order {
         totalPrice = unitPrice.multiply(BigDecimal.valueOf(quantity));
     }
 
-    // Getters and setters are omitted for brevity
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getControlNumber() {
+        return controlNumber;
+    }
+
+    public void setControlNumber(String controlNumber) {
+        this.controlNumber = controlNumber;
+    }
+
+    public Date getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public void setRegistrationDate(Date registrationDate) {
+        this.registrationDate = registrationDate;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public BigDecimal getUnitPrice() {
+        return unitPrice;
+    }
+
+    public void setUnitPrice(BigDecimal unitPrice) {
+        this.unitPrice = unitPrice;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public Long getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(Long clientId) {
+        this.clientId = clientId;
+    }
+
+    public BigDecimal getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(BigDecimal totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
 }
