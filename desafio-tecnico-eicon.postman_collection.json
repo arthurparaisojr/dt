@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "f5aecb34-bba7-4633-9fab-b96c003bbe41",
+		"name": "dt-eicon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12959277"
+	},
+	"item": [
+		{
+			"name": "Enviar pedidos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"controlNumber\": \"001\",\r\n  \"registrationDate\": \"2024-04-19T12:00:00Z\",\r\n  \"productName\": \"Gestão tributária e fiscal\",\r\n  \"unitPrice\": 299.99,\r\n  \"quantity\": 3,\r\n  \"clientId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar todos os pedidos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"controlNumber\": \"001\",\r\n  \"registrationDate\": \"2024-04-19T12:00:00Z\",\r\n  \"productName\": \"Gestão tributária e fiscal\",\r\n  \"unitPrice\": 299.99,\r\n  \"quantity\": 3,\r\n  \"clientId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta com filtro",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"controlNumber\": \"001\",\r\n  \"registrationDate\": \"2024-04-19T12:00:00Z\",\r\n  \"productName\": \"Gestão tributária e fiscal\",\r\n  \"unitPrice\": 299.99,\r\n  \"quantity\": 3,\r\n  \"clientId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos/filtro?unitPrice=299.99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos",
+						"filtro"
+					],
+					"query": [
+						{
+							"key": "unitPrice",
+							"value": "299.99"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

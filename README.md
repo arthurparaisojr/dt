@@ -35,5 +35,3 @@
 #### banco de dados mysql
 #### utilizar framework ORM
 #### utilizar a linguagem java 1.8
-### a solução deve ser publicada no github juntamente com o script de criação das tabelas.
-### deve ser enviado o link do repositório da solução para este email.
