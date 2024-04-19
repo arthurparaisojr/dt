@@ -1,4 +1,4 @@
-package com.example.orderapi;
+package br.com.teste.eicon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

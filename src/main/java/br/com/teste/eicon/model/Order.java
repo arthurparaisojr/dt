@@ -1,18 +1,18 @@
-package com.example.orderapi;
+package br.com.teste.eicon.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-@Table(name = "orders")
+@Table(name = "Orders")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long orderId;
 
     @Column(unique = true, nullable = false)
-    private String controlNumber;
+    private Integer controlNumber;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date registrationDate = new Date();
@@ -25,7 +25,7 @@ public class Order {
 
     private int quantity = 1;
 
-    @Column(nullable = false)
+    @Column(name = "customer_id")
     private Long clientId;
 
     private BigDecimal totalPrice;
@@ -43,20 +43,19 @@ public class Order {
         totalPrice = unitPrice.multiply(BigDecimal.valueOf(quantity));
     }
 
-
-    public Long getId() {
-        return id;
+    public Long getOrderId() {
+        return orderId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
     }
 
-    public String getControlNumber() {
+    public Integer getControlNumber() {
         return controlNumber;
     }
 
-    public void setControlNumber(String controlNumber) {
+    public void setControlNumber(Integer controlNumber) {
         this.controlNumber = controlNumber;
     }
 
