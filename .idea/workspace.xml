@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4222ef6e-8c0d-4850-9556-6a0a3c6faeaa" name="Changes" comment="Funcionando" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Arthur Paraiso Jr &lt;arthurparaisojr@gmail.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -55,8 +49,6 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "JUnit.OrderControllerTests and 1 more.executor": "Run",
-    "JUnit.OrderControllerTests.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -86,33 +78,6 @@
       <recent name="D:\OneDrive\repos\Teste\dt-eicon\src\main\java\br\com\teste\eicon\controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="OrderControllerTests and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order-api" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="br.com.teste.eicon.OrderControllerTests" />
-        <pattern testClass="br.com.teste.eicon.OrderTests" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.teste.eicon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.teste.eicon" />
-      <option name="MAIN_CLASS_NAME" value="br.com.teste.eicon.OrderControllerTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="order-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.teste.eicon.Application" />
@@ -129,8 +94,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="JUnit.OrderControllerTests and 1 more" />
-        <item itemvalue="JUnit.OrderControllerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +113,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713543626393</updated>
-      <workItem from="1713543628839" duration="8701000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -168,39 +130,6 @@
       <option name="project" value="LOCAL" />
       <updated>1713544296806</updated>
     </task>
-    <task id="LOCAL-00003" summary="Funcionando">
-      <option name="closed" value="true" />
-      <created>1713549288029</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1713549288029</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Funcionando">
-      <option name="closed" value="true" />
-      <created>1713549303115</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1713549303115</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Funcionando">
-      <option name="closed" value="true" />
-      <created>1713550997797</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1713550997797</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Funcionando">
-      <option name="closed" value="true" />
-      <created>1713552127451</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1713552127451</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +138,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init" />
-    <MESSAGE value="Funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funcionando" />
   </component>
 </project>
