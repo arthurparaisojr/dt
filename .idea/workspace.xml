@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4222ef6e-8c0d-4850-9556-6a0a3c6faeaa" name="Changes" comment="Funcionando">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/teste/eicon/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/teste/eicon/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/teste/eicon/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/teste/eicon/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/teste/eicon/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/teste/eicon/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/teste/eicon/OrderControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/teste/eicon/OrderControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/teste/eicon/OrderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/teste/eicon/OrderTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +15,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Arthur Paraiso Jr &lt;arthurparaisojr@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -56,6 +59,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.OrderControllerTests and 1 more.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -85,7 +89,33 @@
       <recent name="D:\OneDrive\repos\Teste\dt-eicon\src\main\java\br\com\teste\eicon\controller" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.OrderControllerTests and 1 more">
+    <configuration name="OrderControllerTests and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order-api" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="br.com.teste.eicon.OrderControllerTests" />
+        <pattern testClass="br.com.teste.eicon.OrderTests" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.teste.eicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.teste.eicon" />
+      <option name="MAIN_CLASS_NAME" value="br.com.teste.eicon.OrderControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="order-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.teste.eicon.Application" />
@@ -101,6 +131,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderControllerTests and 1 more" />
+        <item itemvalue="JUnit.OrderControllerTests" />
         <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
@@ -121,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713543626393</updated>
-      <workItem from="1713543628839" duration="7092000" />
+      <workItem from="1713543628839" duration="8335000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -155,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713549303115</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Funcionando">
+      <option name="closed" value="true" />
+      <created>1713550997797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713550997797</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

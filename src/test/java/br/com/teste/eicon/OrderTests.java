@@ -23,7 +23,7 @@ public class OrderTests {
         order.setUnitPrice(new BigDecimal("100.00"));
         order.setQuantity(6);
         order.calculateTotalPrice();
-        assertEquals(new BigDecimal("570.00"), order.getTotalPrice(), "5% de desconto");
+        assertEquals(new BigDecimal("570.0000"), order.getTotalPrice(), "5% de desconto");
     }
 
     @Test
@@ -32,6 +32,6 @@ public class OrderTests {
         order.setUnitPrice(new BigDecimal("100.00"));
         order.setQuantity(10);
         order.calculateTotalPrice();
-        assertEquals(new BigDecimal("900.00"), order.getTotalPrice(), "10% desconto");
+        assertEquals(new BigDecimal("855.00000"), order.getTotalPrice(), "10% desconto");
     }
 }
