@@ -23,6 +23,8 @@ public class OrderController {
     public ResponseEntity<Order> createOrder(@RequestBody Order order) {
         if (orderService.findByControlNumber(order.getControlNumber()).isPresent()) {
             return ResponseEntity.badRequest().build();
+        } else if (orderService.limiteAtingido(order.getClientId())) {
+            return ResponseEntity.badRequest().build();
         }
         Order savedOrder = orderService.saveOrder(order);
         return ResponseEntity.ok(savedOrder);

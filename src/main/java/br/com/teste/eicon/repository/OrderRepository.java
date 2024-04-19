@@ -13,7 +13,6 @@ import java.math.BigDecimal;
 @Repository
 public interface OrderRepository extends JpaRepository<Order, Long> {
     Optional<Order> findByControlNumber(Integer controlNumber);
-    List<Order> findByOrderId(Long orderId);
     @Query("SELECT o FROM Order o WHERE " +
             "(:orderId IS NULL OR o.orderId = :orderId) AND " +
             "(:registrationDate IS NULL OR o.registrationDate = :registrationDate) AND " +

@@ -21,6 +21,11 @@ public class OrderService {
         return orderRepository.save(order);
     }
 
+    public boolean limiteAtingido (Long clienteId) {
+        List<Order> existingOrders = findOrdersWithFilters(null, null, null, null, null, null,  clienteId, null);
+        return (existingOrders.size() >= 10);
+    }
+
     public Optional<Order> findByControlNumber(Integer controlNumber) {
         return orderRepository.findByControlNumber(controlNumber);
     }
