@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be1bd4d-8e34-4dd2-a675-068bca636251" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/teste/eicon/OrderControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/teste/eicon/OrderControllerTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="0be1bd4d-8e34-4dd2-a675-068bca636251" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +104,7 @@
       <updated>1713553244390</updated>
       <workItem from="1713553245965" duration="3739000" />
       <workItem from="1713785524804" duration="1551000" />
-      <workItem from="1714139435761" duration="98000" />
+      <workItem from="1714139435761" duration="194000" />
     </task>
     <servers />
   </component>
