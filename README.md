@@ -1,4 +1,4 @@
-# Desafio Técnico - EICON
+# Desafio Técnico
 
 
 ### Criar uma solução java em formato de API que atenda aos seguintes requisitos para a recepção de pedidos dos clientes:
